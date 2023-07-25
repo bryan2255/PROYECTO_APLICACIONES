@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoaplicaciones.MainPage">
+
+    <StackLayout Margin="20"
+                 BackgroundColor="CornflowerBlue">
+        <Label Text="CALCULADORA VLSM" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold" />
+        <Label Text="Dirección IP:" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+        <Entry x:Name="ipAddressEntry" Placeholder="Ingrese la dirección IP" />
+
+        <Label Text="Hosts necesarios (separados por comas):" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+        <Entry x:Name="hostsNeededEntry" Placeholder="Ejemplo: 10, 20, 5" />
+
+        <Button Text="Calcular" Clicked="OnCalculateButtonClicked"
+                HorizontalOptions="Center"/>
+
+        <ListView x:Name="resultListView" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding NetworkAddress}" Detail="{Binding SubnetMask}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
+</ContentPage>

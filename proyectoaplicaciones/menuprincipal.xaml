@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoaplicaciones.menuprincipal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="CadetBlue">
+            <Image Source="https://3.bp.blogspot.com/-ptMEF-Vjs18/V5V5PEuxWUI/AAAAAAAAATY/A7apdD58Ujwkf2Tx37EPWlBz7zxHN1aKQCLcB/s1600/espe-peque.png" HeightRequest="180" />
+            <StackLayout VerticalOptions="Center"
+                         Spacing="40"></StackLayout >
+            <Label Text="APLICACIONES MOVILES" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold" />
+            <Label Text="------------NRC:9831----------" HorizontalTextAlignment="Center" FontSize="20" />
+            <Label Text="INTEGRANTES:" HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" />
+            <Label Text="----------------Bryan Chicaiza---------------" HorizontalTextAlignment="Center" FontSize="20" />
+            <Label Text="---------------Alexander Morán---------------" HorizontalTextAlignment="Center" FontSize="20" />
+            <Button Text="Iniciar"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="Medium"
+                    x:Name="btniniciar"
+                    Clicked="btniniciar_Clicked"
+                    BackgroundColor="Aquamarine"/>
+
+            <Label Text="CALCULADORA VLSM" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold" />
+            <Image Source="https://play-lh.googleusercontent.com/MX4SvJE7xjptpnZtDf0tBx7kGwyjpxRHPKj-KI4t3B4I-cuOdLSNH1oAoSXzqzxYPus"
+                   HeightRequest="180"/>
+            <StackLayout></StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
